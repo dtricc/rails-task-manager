@@ -3,6 +3,7 @@
   <%= t.text_field :title %>
   <%= t.label :details, 'What are the details of your task?' %>
   <%= t.text_field :details %>
+  <%= t.check_box :completed %> <%= 'click to mark as completed' %>
   <%= t.submit %>
 <% end %>
 <%= link_to 'back to tasks', tasks_path %>
