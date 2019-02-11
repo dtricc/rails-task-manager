@@ -1,0 +1,9 @@
+<%= form_for @task do |t| %>
+  <%= t.label :title, 'what is the title of your task?' %>
+  <%= t.text_field :title %>
+  <%= t.label :details, 'What are the details of your task?' %>
+  <%= t.text_field :details %>
+  <%= t.submit %>
+<% end %>
+<%= link_to 'back to tasks', tasks_path %>
+
